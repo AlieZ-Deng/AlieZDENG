@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel = "stylesheet" href="../2.css">
+	<link rel="shortcut icon" href='../img/bitbug_favicon.ico' />
+	<link rel = "stylesheet"  media="(max-width:1300px)"  href="">
+	<title>AlieZDENG</title>
+	<style type="text/css">
+		/**{
+			box-sizing: border-box;
+		}*/
+		/*.bg{
+			width: 100%;
+			height:100%;
+			background: #f1eaea;
+			position: absolute;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			background: #f1eaea;
+			margin: 110px auto;
+			position: relative;
+			text-align: center;
+		}
+		.border{
+			width: 100px;
+			height: 40px;
+			border: 1px solid #fff;
+			border-radius: 6px;
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			margin-top: -20px;
+			left: 30%;
+		}
+		.right{
+			background: #fff;
+			width: 5px;
+			height: 20px;
+			border-radius: 0px 4px 4px 0px;
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			left: 65%;
+
+		}
+		.content{
+			width: 0%;
+			height: 100%;
+			background: #fff;
+		}
+		.contra{
+			display: none;
+		}*/
+		
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="box">
+			<div class="border">
+				<div class="content"></div>
+			</div>
+			<div class="right"></div>
+		</div>
+
+	</div>
+	<div class="contra">
+		<div class="header">
+			<div class="container">
+				<h1>Deng Jiahao</h1>
+				<p>啊啊啊</p>
+				<div class="links">
+					<a href="">github</a>
+					<a href="">mail</a>
+				</div>
+			</div>
+		</div>
+		<div class="progress"></div>
+		<div class="footer"></div>
+	</div>
+	<script type="text/javascript">
+		var oBg = document.querySelector('.bg');
+		var oCont = document.querySelector('.content');
+		var str = 0;
+		var oContra = document.querySelector('.contra');
+		/*setTimeout(function(){
+			var a = setInterval(function(){
+				var num = Math.random()*0.5;
+				str = str + num;
+				oCont.style.width = str + '%';
+				console.log(num);
+				if(str >= 100){
+					clearInterval(a);
+					oBg.innerHTML = '';
+					oBg.parentNode.removeChild(oBg);
+					oContra.style.display = 'block';
+					console.log('1');
+				}
+			},16)
+		},1200)*/
+
+	</script>
+</body>
+</html>

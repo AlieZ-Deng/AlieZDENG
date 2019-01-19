@@ -1,0 +1,260 @@
+		body{
+			font-size:1em;
+			background-color: #f7f7f7;
+		}
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		h2{
+			color:#2b3f55;
+		}
+		.header{
+			background: #fff;
+
+		}
+		.header .container{
+			width: 800px;
+			margin: 0px auto;
+			padding: 80px 0;
+		}
+		.header .container h1,p{
+			margin: 0;
+			padding: 0;
+			color: #2b3f55;
+		}
+		.header .container h1{
+			margin-bottom: 10px;
+			
+		}
+		.header .container p{
+			margin-top: 12px;
+			margin-bottom: 20px;
+			color: #15212e;
+			
+		}
+		.links a{
+			margin: 0 10px 0 0;
+		}
+		.links img{
+			width: 30px;
+		}
+		.links img:hover{
+			opacity: 0.4;
+		}
+		ul,li{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.progress{
+			background: #f7f7f7;
+			display: flex;
+			width: 800px;
+			margin: 110px auto;
+			justify-content: space-between;
+
+		}
+		.progress li{
+			margin-bottom:5px;
+		}
+		.progress .edu  img,
+		.progress .tech  img,
+		.progress .study  img{
+			width: 30px;
+			vertical-align: middle;
+			margin-right:5px;
+		}
+		.progress .edu li img,
+		.progress .study li img,
+		.progress .tech li img{
+			width: 20px;
+			height: 20px;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		.item1{
+			width: 800px;
+			margin: 0 auto;
+		}
+		.appli .item{
+			width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+			
+		}
+		.item .imgbg{
+			width: 360px;
+			height: 500px;
+			background-color: #fff;
+			margin: 0 auto;
+			box-shadow: 0px 3px 15px #c6c5c5;
+			margin-bottom:100px;
+			border-radius: 10px;
+		}
+		.footer{
+			background-color: #fff;
+		}
+		.footbox{
+			display:flex;
+			width: 800px;
+			height:160px;
+			margin: 20px auto 0;
+			justify-content: space-between;
+			align-items:center;
+			color:#848484;
+			font-size:12px;
+		}
+		.von-me{
+			text-align:right;
+			color:#eee;
+		}
+		.von-me img{
+			width:100px;
+			height:60px;
+			
+		}
+	
+		.triangle{
+			animation-name: float1;
+			animation-duration: 46s;
+			animation-direction: alternate;
+		}
+		.zheng{
+			animation-name: float2;
+			animation-duration: 60s;
+			animation-direction: alternate;
+		}
+		.yuan{
+			animation-name: float3;
+			animation-duration: 3s;
+			animation-direction: alternate;
+
+			
+		}
+		.zheng,.yuan,.triangle{
+			position: absolute;
+			width: 100px;
+			opacity: .6;
+			animation-iteration-count: infinite;
+		}
+		@keyframes float1{
+			from{
+				transform: translate(-100px,360px) rotate(0);
+			}
+			to{
+				transform: translate(700px,-90px) rotate(330deg);
+			}
+		}
+		@keyframes float2{
+			from{
+				transform: translate(100px,100px) rotate(0);
+			}
+			to{
+				transform: translate(1200px,200px) rotate(360deg);
+			}
+		}
+		@keyframes float3{
+			from{
+				transform: translate(500px,60px) rotate(0);
+			}
+			to{
+				transform: translate(600px,70px) rotate(360deg);
+			}
+		}
+		@keyframes float4{
+			from{
+				transform: translate(0px,0px) rotate(0);
+			}
+			to{
+				transform: translate(100px,600px) rotate(360deg);
+			}
+		}
+		@keyframes float5{
+			from{
+				transform: translate(100px,-100px) rotate(0);
+			}
+			to{
+				transform: translate(101px,700px) rotate(360deg);
+			}
+		}
+		.contant-me{
+			position:relative;
+		}
+		.contant-me:hover .wechat{
+			
+			opacity:1;
+		}
+		.wechat{
+			position:absolute;
+			transition:opacity 1s;
+			transition-timing-function:ease;
+			top:-100px;
+			left:-25px;
+			width:100px;
+			height:100px;
+			opacity:0;
+			
+		}
+		@media(max-width:700px){
+			/*.contra{
+				width:100%;
+			}
+			.header,
+			.footer{
+				width:100%;
+				margin:0 auto;
+			}*/
+			.progress,
+			.item,
+			.footbox,
+			.appli
+			{
+				width:90%;
+				margin:48px auto 0 auto;
+			}
+			.header .container{
+				width:90%;
+			}
+			.appli .item{
+				width:90%;
+			}
+			.footbox,
+			.progress
+			{
+				display:block;
+			}
+			.edu,
+			.tech,
+			.study{
+				margin:0 0 20px 0;
+			}
+			
+			.footbox{
+				height:160px;
+				padding:30px 0;
+			}
+
+			.contant-me,
+			.code-me,
+			.von-me{
+				margin:10px 0;
+			}
+			.von-me{
+				float:right;
+				padding:10px 20px 0 0;
+			}
+			.zheng{
+				display:none;
+			}
+			.triangle{
+				animation-name: float4;
+				animation-duration: 100s;
+			}
+			.yuan{
+				animation-name: float5;
+				animation-duration: 30s;
+				animation-direction: normal;
+			}

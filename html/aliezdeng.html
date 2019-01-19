@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel = "stylesheet" href="../1.css">
+	<link rel = "stylesheet" href="../2.css">
+	<link rel="shortcut icon" href='../img/bitbug_favicon.ico' />
+	<link rel = "stylesheet"  media="(max-width:1300px)"  href="">
+	<title>AlieZDENG</title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<div class="bg">
+		<div class="box">
+			<div class="border">
+				<div class="content"></div>
+			</div>
+			<div class="right"></div>
+		</div>
+
+	</div>
+	<div class="contra">
+		<img src="../img/triangle.png" class="triangle">
+		<img src="../img/zheng.png" class="zheng">
+		<img src="../img/yuan.png" class="yuan">
+		<div class="header">
+			<div class="container">
+				<h1>Deng Jiahao</h1>
+				<p>埋来饮茶</p>
+				<div class="links">
+					<a href="https://github.com/AlieZ-Deng"><img src="../img/github.png"></a>
+					<a href=""><img src="../img/email.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="progress">
+			<div class="edu">
+				<h2><img src="../img/edu.png">教育背景</h2>
+				<ul>
+					<li><a href="http://www.dgut.edu.cn/"><img src="../img/dgut.jpg">东莞理工学院 本科</a></li>
+				</ul>
+			</div>
+
+			<div class="tech">
+				<h2><img src="../img/work.png">技术栈</h2>
+				<ul>
+					<li><img src="../img/w3c.png">HTML/CSS/JS</li>
+					<li><img src="../img/ajax.jpg">AJAX及跨域</li>
+					<li><img src="../img/git.png">Git</li>
+					<li><img src="../img/jq.png">JQuery</li>
+				</ul>
+			</div>
+
+			<div class="study">
+				<h2><img src="../img/book.png">学习</h2>
+				<ul>
+					<li><a href="https://www.imooc.com/"><img src="../img/mooc1.png">慕课网</a></li>
+					<li><a href="https://www.csdn.net/"><img src="../img/csdn.jpg">CSDN</a></li>
+					<li><a href="https://www.bilibili.com/"><img src="../img/blibli.png">bilibili</a></li>
+					<li><a href="https://www.codecademy.com/"><img src="../img/codecademy.png">Codecademy</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="appli">
+			<div class="item1"><h2>项目应用</h2></div>
+			<div class="item">
+				<div class="imgbg">
+
+				</div>
+				<div class="imgbg"></div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footbox">
+				<div class="contant-me">
+					联系我
+					<img src = '../img/wechat.jpg' class = 'wechat'>
+				</div>
+				<div class="code-me">Design & Code with ♥ by AlieZDENG</div>
+				<div class="von-me">
+					<img src="../img/ico.png">
+					<div>冰岛语：希望<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var oBg = document.querySelector('.bg');
+		var oCont = document.querySelector('.content');
+		var str = 0;
+		var oContra = document.querySelector('.contra');
+		setTimeout(function(){
+			var a = setInterval(function(){
+				var num = Math.random()*0.5;
+				str = str + num;
+				oCont.style.width = str + '%';
+				console.log(num);
+				if(str >= 100){
+					clearInterval(a);
+					oBg.innerHTML = '';
+					oBg.parentNode.removeChild(oBg);
+					oContra.style.display = 'block';
+					console.log('1');
+				}
+			},16)
+		},1200)</script>
+</body>
+</html>
