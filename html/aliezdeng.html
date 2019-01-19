@@ -31,7 +31,7 @@
 				<p>埋来饮茶</p>
 				<div class="links">
 					<a target="_blank" href="https://github.com/AlieZ-Deng"><img src="../img/github.png"></a>
-					<a target="_blank" href=""><img src="../img/email.png"></a>
+					<a target="_blank"  class = 'email'><img src="../img/email.png"></a>
 				</div>
 			</div>
 		</div>
@@ -108,6 +108,11 @@
 					console.log('1');
 				}
 			},16)
-		},1200)</script>
+		},1200)
+		var oEmail = document.querySelector('.email');
+		oEmail.onclick = function(){
+			alert('879577413@qq.com');
+		}
+	</script>
 </body>
 </html>
