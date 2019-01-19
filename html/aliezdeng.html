@@ -99,13 +99,13 @@
 				var num = Math.random()*0.5;
 				str = str + num;
 				oCont.style.width = str + '%';
-				console.log(num);
+				
 				if(str >= 100){
 					clearInterval(a);
 					oBg.innerHTML = '';
 					oBg.parentNode.removeChild(oBg);
 					oContra.style.display = 'block';
-					console.log('1');
+					
 				}
 			},16)
 		},1200)
